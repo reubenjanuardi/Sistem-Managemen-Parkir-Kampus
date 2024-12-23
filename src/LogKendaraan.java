@@ -38,7 +38,7 @@ public class LogKendaraan {
         }
     }
 
-    // TODO:Method untuk mengupdate log_parkir keluar ke tabel log_parkir
+    // Method untuk mengupdate log_parkir keluar ke tabel log_parkir
     public static void catatKendaraanKeluar(Vehicle vehicle, String kategoriArea, String jenisArea) {
         String updateQuery = "UPDATE log_parkir SET waktu_keluar = CURRENT_TIMESTAMP WHERE nomor_kendaraan = ? AND waktu_keluar IS NULL";
         try (Connection conn = DatabaseUtil.getConnection();
