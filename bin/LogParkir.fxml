@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" prefHeight="400.0" prefWidth="700.0" fx:controller="LogParkirController">
+    <!-- Title Label -->
+    <Label layoutX="300.0" layoutY="14.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Data Log Parkir" />
+
+    <!-- TableView for displaying vehicle data -->
+    <TableView fx:id="logTable" layoutX="20.0" layoutY="60.0" prefHeight="300.0" prefWidth="660.0">
+        <columns>
+            <TableColumn fx:id="kolomNomorKendaraan" text="Nomor Kendaraan" prefWidth="132.0" />
+            <TableColumn fx:id="kolomKategori" text="Kategori" prefWidth="132.0" />
+            <TableColumn fx:id="kolomJenisKendaraan" text="Jenis Kendaraan" prefWidth="132.0" />
+            <TableColumn fx:id="kolomWaktuMasuk" text="Waktu Masuk" prefWidth="132.0" />
+            <TableColumn fx:id="kolomWaktuKeluar" text="Waktu Keluar" prefWidth="132.0" />
+        </columns>
+    </TableView>
+
+    <!-- Button to return to admin menu -->
+    <Button fx:id="btnKembali" text="Kembali ke Menu Admin" layoutX="20.0" layoutY="370.0"/>
+</AnchorPane>

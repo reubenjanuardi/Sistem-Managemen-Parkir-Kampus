@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="450.0" prefWidth="450.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LaporanParkirController">
+    <children>
+        <!-- Header -->
+        <Label layoutX="132.0" layoutY="14.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Laporan Parkir Harian" />
+        <HBox alignment="CENTER" layoutX="33.0" layoutY="50.0" spacing="10" AnchorPane.leftAnchor="33.0" AnchorPane.topAnchor="50.0">
+            <Label text="Pilih Tanggal:" />
+            <DatePicker fx:id="datePicker" />
+            <Button onAction="#handleFilterData" text="Tampilkan Laporan" />
+        </HBox>
+        <!-- Table -->
+        <TableView fx:id="tabelLaporan" layoutX="30.0" layoutY="94.0" prefHeight="300.0" prefWidth="384.0">
+            <columns>
+                <TableColumn fx:id="kolomKategoriPemilik" prefWidth="117.59997940063477" text="Kategori" />
+                <TableColumn fx:id="kolomJenisKendaraan" minWidth="5.60003662109375" prefWidth="135.99998474121094" text="Jenis" />
+                <TableColumn fx:id="kolomJumlah" minWidth="0.0" prefWidth="131.20001220703125" text="Jumlah" />
+            </columns>
+        </TableView>
+
+        <!-- Footer -->
+        <Button fx:id="btnKembali" layoutX="151.0" layoutY="412.0" text="Kembali ke Menu Admin" />
+    </children>
+</AnchorPane>

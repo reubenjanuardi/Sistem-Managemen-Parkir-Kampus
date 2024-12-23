@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="320.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminLoginController">
+   <children>
+      <GridPane layoutX="-1.0" layoutY="20.0" prefHeight="30.0" prefWidth="323.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="ADMIN LOGIN" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+         </children>
+      </GridPane>
+      <GridPane layoutX="26.0" layoutY="67.0" prefHeight="69.0" prefWidth="272.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="152.3333282470703" minWidth="0.0" prefWidth="84.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="208.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="31.0" minHeight="10.0" prefHeight="31.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="34.5" minHeight="27.5" prefHeight="28.5" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="54.0" text="Username" textAlignment="RIGHT" />
+            <Label prefHeight="17.0" prefWidth="50.0" text="Password" GridPane.rowIndex="1" />
+            <TextField fx:id="usernameField" promptText="enter username" GridPane.columnIndex="1" />
+            <PasswordField fx:id="passwordField" promptText="enter password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="26.0" layoutY="141.0" prefHeight="30.0" prefWidth="272.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#handleLogin" text="Login" GridPane.columnIndex="1" />
+            <Button fx:id="btnKembali" mnemonicParsing="false" text="Kembali" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

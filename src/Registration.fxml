@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="RegistrationController"
+      spacing="15" alignment="CENTER" style="-fx-padding: 20; -fx-background-color: #f9f9f9;">
+    <Label text="Registrasi Kendaraan" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Nomor Kendaraan:" prefWidth="150" />
+        <TextField fx:id="txtNomorKendaraan" promptText="Masukkan nomor kendaraan" />
+    </HBox>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Jenis Kendaraan:" prefWidth="150" />
+        <ComboBox fx:id="cbJenisKendaraan"/>
+    </HBox>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Nama Pemilik:" prefWidth="150" />
+        <TextField fx:id="txtNamaPemilik" promptText="Masukkan nama pemilik" />
+    </HBox>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Kategori Pemilik:" prefWidth="150" />
+        <ComboBox fx:id="cbKategoriPemilik"/>
+    </HBox>
+    
+    <Button text="Daftar" fx:id="btnDaftar" prefWidth="200" style="-fx-font-size: 14px;" />
+    <Button text="Kembali ke Menu Utama" fx:id="btnKembali" prefWidth="200" style="-fx-font-size: 14px;" />
+</VBox>

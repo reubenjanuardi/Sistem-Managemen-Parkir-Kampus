@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="MainMenuController"
+      spacing="20" alignment="CENTER" style="-fx-padding: 20; -fx-background-color: #f0f0f0;">
+    <Label text="Selamat Datang di Sistem Manajemen Parkir Kampus" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+    <Button text="Registrasi Kendaraan" fx:id="btnRegistrasi" prefWidth="200"/>
+    <Button text="Simulasi Parkir" fx:id="btnSimulasi" prefWidth="200"/>
+    <Button text="Menu Admin" fx:id="btnAdmin" prefWidth="200"/>
+</VBox>
