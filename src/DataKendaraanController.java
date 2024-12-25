@@ -1,5 +1,4 @@
 import java.sql.*;
-
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -46,7 +45,6 @@ public class DataKendaraanController {
 
         // Load data into the TableView
         loadDataKendaraan();
-
         btnKembali.setOnAction(event -> NavigationUtil.goToAdminMenu(btnKembali));
     }
 

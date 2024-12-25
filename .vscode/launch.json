@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DatabaseReset",
+            "request": "launch",
+            "mainClass": "DatabaseReset",
+            "projectName": "Tubes Sistem Managemen Parkir Kampus_43a00423"
+        },
+        {
+            "type": "java",
             "name": "SQLiteDatabaseSetup",
             "request": "launch",
             "mainClass": "SQLiteDatabaseSetup",

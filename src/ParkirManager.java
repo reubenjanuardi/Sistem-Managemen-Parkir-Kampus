@@ -82,6 +82,7 @@ public class ParkirManager {
         return false;
     }
 
+    // Method untuk mengeluarkan kendaraan dari slot parkir
     public static boolean unloadVehicle(Vehicle vehicle, String kategoriArea, String jenisArea) {
         // Query untuk mengambil detail kendaraan yang keluar
         String selectQuery = "SELECT kategori_area, jenis_area FROM kendaraan_terparkir WHERE nomor_kendaraan = ?";
@@ -165,6 +166,4 @@ public class ParkirManager {
             e.printStackTrace();
         }
     }
-
-    
 }

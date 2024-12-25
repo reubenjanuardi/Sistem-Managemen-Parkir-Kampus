@@ -60,31 +60,9 @@ public class SimulasiController {
             return;
         }
 
-        // // Mengecek apakah kendaraan sudah terparkir
-        // String category = vehicle.getKategoriPemilik();
-        // ArrayList<Vehicle> parkedVehicles = ParkirManager.getParkedVehicles();
-        // for (Vehicle v : parkedVehicles) {
-        //     if (v.getNomorKendaraan().equalsIgnoreCase(nomorKendaraan)) {
-        //         showAlert("Error", "Kendaraan Sudah Parkir!", "Kendaraan ini sudah parkir di sistem.");
-        //         return;
-        //     }
-        // }
-
         // Mengecek apakah kendaraan sudah terparkir
         String category = vehicle.getKategoriPemilik();
         String type = vehicle.getJenisKendaraan();
-        // ArrayList<Vehicle> parkedVehicles = ParkirManager.getParkedVehicles();
-
-        // System.out.println("Mengecek kendaraan dengan nomor: " + nomorKendaraan); // Debugging
-        // System.out.println("Kendaraan terparkir saat ini: " + parkedVehicles.size()); // Debugging
-
-        // for (Vehicle v : parkedVehicles) {
-        //     //System.out.println("Membandingkan dengan kendaraan: " + v.getNomorKendaraan()); // Debugging
-        //     if (v.getNomorKendaraan().equalsIgnoreCase(nomorKendaraan)) {
-        //         showAlert("Error", "Kendaraan Sudah Parkir!", "Kendaraan ini sudah parkir di sistem.");
-        //         return;
-        //     }
-        // }
 
         // Proses parkir
         if (ParkirManager.parkVehicle(vehicle, category, type)) {

@@ -26,9 +26,10 @@ public class LaporanParkirController {
 
     @FXML
     private Button btnKembali;
-    
+    // ObservableList untuk menampung data laporan parkir
     private final ObservableList<LaporanParkir> laporanList = FXCollections.observableArrayList();
-    
+
+    // Inisialisasi TableView dan lainnya
     @FXML
     private void initialize() {
         kolomKategoriPemilik.setCellValueFactory(new PropertyValueFactory<>("kategori"));
@@ -42,6 +43,7 @@ public class LaporanParkirController {
         btnKembali.setOnAction(event -> NavigationUtil.goToAdminMenu(btnKembali));
     }
 
+    // Method untuk memuat data laporan parkir berdasarkan tanggal yang dipilih
     private void loadLaporanData(LocalDate date) {
         laporanList.clear();
     
@@ -81,6 +83,7 @@ public class LaporanParkirController {
         }
     }  
 
+    // Method untuk menampilkan data laporan berdasarkan tanggal yang dipilih
     @FXML
     private void handleFilterData() {
         LocalDate selectedDate = datePicker.getValue();
@@ -91,6 +94,7 @@ public class LaporanParkirController {
         }
     }
 
+    // Method untuk menampilkan alert dialog
     private void showAlert(String title, String header, String content) {
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle(title);
